@@ -1,0 +1,152 @@
+// ==========================================================================
+// Buttons
+// ==========================================================================
+
+
+// Mobile First!
+.btn, .label {
+  font-weight: 300;
+  @include border-radius(4px);
+  margin-bottom: 20px;
+  @include transition(all .4s ease);
+
+  &.pwat-btn {
+    @include background-gradient($color-accent, $color-accent);
+    position: relative;
+  }
+
+  &[type="submit"] {
+    margin: 15px auto 0;
+    width: 100%;
+  }
+}
+
+.btn:hover, .btn:focus {
+  outline: none;
+}
+
+.btn-primary {
+  border-bottom-color: darken($color-accent, 10%);
+  border-left-color: lighten($color-accent, 5%);
+  border-right-color: lighten($color-accent, 5%);
+  border-top-color: lighten($color-accent, 15%);
+  border-width: 1px;
+  @include background-gradient($color-accent, darken($color-accent, 20%));
+  @include box-shadow(0 2px 1px rgba(0, 0, 0, 0.5));
+  color: darken($color-text-inverse, 10%);
+  text-transform: uppercase;
+
+  &:hover, &:focus {
+    @include background-gradient($color-accent, $color-accent);
+    border-bottom-color: lighten($color-accent, 20%);
+    border-left-color: lighten($color-accent, 5%);
+    border-right-color: lighten($color-accent, 5%);
+    border-top-color: lighten($color-accent, 15%);
+  }
+}
+
+.btn-solid {
+  background-color: $bg-color--button-solid;
+  color: darken($text-color--button-solid, 10%);
+  text-transform: uppercase;
+
+  &:hover, &:focus {
+    background-color: lighten($bg-color--button-solid, 30%);
+    color: darken($text-color--button-solid, 10%);
+  }
+}
+
+.btn-link {
+  color: $color-text;
+  text-decoration: underline;
+
+  &:hover {
+    color: $color-accent;
+  }
+}
+
+.btn-lg {
+  font-size: 1.3rem;
+}
+
+.btn-container {
+  text-align: center;
+
+  &.cta-header {
+    margin-left: -15px;
+    @include transform(scale(.92));
+  }
+
+  &.cta-footer {
+    margin-bottom: 0;
+    margin-left: -13px;
+    text-align: center;
+    @include transform(scale(.92));
+  }
+}
+
+@media (min-width: $screen-width--iphone6) {
+  .btn-container {
+    &.cta-header {
+      margin-left: 0;
+      @include transform(scale(1));
+    }
+
+    &.cta-footer {
+      margin-left: 0;
+      @include transform(scale(1));
+    }
+  }
+}
+
+@media (min-width: $screen-width--iphone6plus) {
+  .btn-container {
+    &.cta-header {
+      @include transform(scale(1));
+    }
+
+    &.cta-footer {
+      @include transform(scale(1));
+    }
+  }
+}
+
+@media (min-width: 568px) {
+  .btn-container {
+    &.cta-header {
+      @include transform(scale(1));
+    }
+
+    &.cta-footer {
+      @include transform(scale(1));
+    }
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+  .btn-container {
+    &.cta-header {
+      @include transform-origin(initial);
+      @include transform(scale(1));
+    }
+
+    &.cta-footer {
+      @include transform-origin(initial);
+      @include transform(scale(1));
+    }
+  }
+
+  .btn[type="submit"] {
+    width: auto;
+  }
+
+  .btn-lg {
+    font-size: 2.4rem;
+  }
+}
+
+@media (min-width: $screen-md-min) {
+  .btn-container {
+    text-align: left;
+  }
+}

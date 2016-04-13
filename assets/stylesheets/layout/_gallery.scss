@@ -1,0 +1,39 @@
+// ==========================================================================
+// About Section
+// ==========================================================================
+
+
+// Mobile First!
+#gallery {
+  background-color: $color-background;
+  padding-bottom: 70px;
+
+  img {
+    width: 100%;
+    margin-bottom: 25px;
+    max-height: 213px;
+    object-fit: cover;
+
+    &.vertical {
+      max-height: 365px;
+      height: 100%;
+      width: auto;
+    }
+  }
+}
+
+@media (min-width: 401px) {
+  #gallery img.vertical {
+    max-height: 451px;
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  #gallery img {
+    max-height: 250px;
+
+    &.vertical {
+      max-height: 525px;
+    }
+  }
+}

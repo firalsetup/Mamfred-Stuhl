@@ -1,0 +1,103 @@
+// ==========================================================================
+// Hero
+// ==========================================================================
+
+
+// Mobile First!
+#hero {
+  color: $color-text;
+  padding: 0;
+
+  ul {
+    font-size: 1.2em;
+  }
+
+  .lp-element {
+    padding: 60px 20px 40px;
+    background-color: rgba(255, 255, 255, .75);
+    margin: -1px -15px 0;
+
+    p:last-child {
+      margin-bottom: 0;
+    }
+  }
+}
+
+section.hero {
+  p:last-child {
+    margin-bottom: 0;
+  }
+
+  .box {
+    background-color: rgba($color-background--hero-box, $transparency--hero-box);
+    @include border-radius(4px);
+    color: $color-text--hero-box;
+    padding: 20px 10px;
+
+    .panel {
+      color: $color-text;
+      padding: 20px;
+      margin-top: 30px;
+    }
+  }
+}
+
+#parallax {
+  height: 680px;
+  width: 100%;
+  top: 50px;
+  position: fixed;
+  background-attachment: $bg1-attachment-mobile;
+  background-color: $bg1-color;
+  background-image: url($bg1-image);
+  background-position: $bg1-vpos-mobile $bg1-hpos-mobile;
+  background-repeat: $bg1-repeat;
+  background-size: $bg1-size-mobile;
+  z-index: -100;
+}
+
+@media (min-width: 491px) {
+  #hero ul {
+    font-size: 1.1em;
+  }
+
+  #parallax {
+    background-attachment: $bg1-attachment;
+    background-position: $bg1-vpos $bg1-hpos;
+    background-size: $bg1-size;
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+  section.hero .box {
+    padding: 40px 40px 30px;
+  }
+}
+
+@media (min-width: $screen-md-min) {
+  #hero h1, #hero p {
+    text-align: left;
+  }
+}
+
+@media (min-width: $screen-md-min) {
+  #hero {
+    .lp-element {
+      padding: 45px 50px;
+    }
+
+    ul {
+      font-size: .85em;
+    }
+  }
+
+  .navbar-fixed-top #hero .lp-element {
+    padding: 124px 20px 40px;
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  #hero ul {
+    font-size: .95em;
+  }
+}

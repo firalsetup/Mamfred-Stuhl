@@ -1,0 +1,35 @@
+// ==========================================================================
+// Join Section
+// ==========================================================================
+
+
+// Mobile First!
+#join_now {
+  background-attachment: $bg2-attachment-mobile;
+  background-color: $bg2-color;
+  background-image: url($bg2-image);
+  background-position: $bg2-vpos-mobile $bg2-hpos-mobile;
+  background-repeat: $bg2-repeat;
+  background-size: $bg2-size-mobile;
+  color: rgba($color-text-inverse, .8);
+  text-align: center;
+
+  ul {
+    font-size: 1.3em;
+  }
+}
+
+@media (min-width: 491px) {
+  #join_now {
+    background-attachment: $bg2-attachment;
+    background-position: $bg2-vpos $bg2-hpos;
+    background-size: $bg2-size;
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+  #join_now ul {
+    font-size: 1em;
+    text-align: center;
+  }
+}

@@ -1,0 +1,37 @@
+// ==========================================================================
+// Forms
+// ==========================================================================
+
+
+// Mobile First!
+label {
+  font-weight: 300;
+
+  a {
+    color: $light-grey;
+    text-decoration: underline;
+    text-transform: none;
+
+    &:hover {
+      text-decoration: underline;
+    }
+  }
+}
+
+.input-group {
+  margin-bottom: 10px;
+}
+
+.form-control {
+  font-weight: 600;
+  border-color: #ecf0f1;
+  background-color: #ecf0f1;
+  box-shadow: none;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  height: 4.4rem;
+  -moz-transition: all .2s;
+  -o-transition: all .2s;
+  -webkit-transition: all .2s;
+  transition: all .2s;
+}

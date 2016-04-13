@@ -1,0 +1,62 @@
+// ==========================================================================
+// Navbar
+// ==========================================================================
+
+
+// Mobile First!
+.navbar {
+  padding-bottom: 18px;
+  padding-top: 18px;
+  background-color: $color-background;
+  border: 0;
+  margin-bottom: 0;
+  position: relative;
+  @include transition(all .2s ease-in-out);
+  z-index: 1000;
+
+  &.scrolling {
+    background-color: rgba($color-background, .9);
+  }
+
+  .navbar-header {
+    float: $logo-alignment--mobile;
+  }
+
+  .navbar-brand {
+    height: auto;
+    padding: 0;
+    width: 100%;
+
+    img {
+      height: 56px;
+      margin: 0 auto;
+      max-width: 280px;
+    }
+  }
+
+  .navbar-nav > li {
+    margin-bottom: 0;
+
+    & > a {
+      color: $color-link;
+      margin-left: 30px;
+      padding: 36px 0 0;
+    }
+  }
+}
+
+.navbar .navbar-nav > li > a:hover, .navbar .navbar-nav > li > a:focus,
+.navbar .navbar-nav > .active > a, .navbar .navbar-nav > .active > a:hover, .navbar .navbar-nav > .active > a:focus {
+  background-color: transparent;
+  color: $color-text;
+}
+
+@media (min-width: $screen-sm-min) {
+  .navbar .navbar-header {
+    float: $logo-alignment--desktop;
+  }
+
+  .navbar > .container .navbar-brand {
+    margin-left: 0;
+  }
+}

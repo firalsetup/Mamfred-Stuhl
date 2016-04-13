@@ -1,0 +1,65 @@
+// ==========================================================================
+// Lists
+// ==========================================================================
+
+
+// Mobile First!
+ul, ol {
+  margin-bottom: 20px;
+}
+
+ul {
+  font-size: 1.6rem;
+  list-style-type: none;
+  padding-left: 0;
+  display: inline-block;
+  text-align: center;
+  width: 100%;
+
+  &.horizontal li {
+    display: inline-block;
+    margin: 0 10px 0;
+  }
+
+  li i {
+    color: darken($color-accent, 10%);
+  }
+
+  &.decimal {
+    li {
+      font-size: .9em;
+      font-weight: bold;
+      line-height: 1.4em;
+      list-style-type: decimal;
+      list-style-position: inside;
+      margin-bottom: 4px;
+      text-align: center;
+    }
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+  ul {
+    &:first-child {
+      margin-left: 0;
+    }
+
+    li {
+      margin: 0 10px 0 0;
+
+      &:first-child {
+        margin-left: 0 !important;
+      }
+    }
+  }
+}
+
+@media (min-width: $screen-md-min) {
+  ul {
+    text-align: left;
+
+    li {
+      margin: 0 5px 5px;
+    }
+  }
+}

@@ -1,0 +1,47 @@
+// ==========================================================================
+// Download Access Page
+// ==========================================================================
+
+
+// Mobile First!
+#download.hero {
+  background-attachment: $bg3-attachment-mobile;
+  background-color: $bg3-color;
+  background-image: url($bg3-image);
+  background-position: $bg3-vpos-mobile $bg3-hpos-mobile;
+  background-repeat: $bg3-repeat;
+  background-size: $bg3-size-mobile;
+  text-align: center;
+
+  i.lg {
+    display: block;
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+
+  p:last-child {
+    margin-bottom: 0px;
+  }
+
+  .btn-primary {
+    margin-top: 20px;
+  }
+
+  .back-link {
+    display: block;
+    color: rgba($white, .5);
+    font-weight: 500;
+
+    &:hover {
+      color: $white;
+    }
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+  #coupon.hero {
+    background-attachment: $bg3-attachment;
+    background-position: $bg3-vpos $bg3-hpos;
+    background-size: $bg3-size;
+  }
+}

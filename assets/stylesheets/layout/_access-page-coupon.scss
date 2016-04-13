@@ -1,0 +1,117 @@
+// ==========================================================================
+// Coupon Access Page
+// ==========================================================================
+
+
+// Mobile First!
+#coupon.hero {
+  background-attachment: $bg3-attachment-mobile;
+  background-color: $bg3-color;
+  background-image: url($bg3-image);
+  background-position: $bg3-vpos-mobile $bg3-hpos-mobile;
+  background-repeat: $bg3-repeat;
+  background-size: $bg3-size-mobile;
+  color: $color-text;
+  text-align: center;
+
+  i.lg {
+    color: darken($color-accent, 7%);
+    display: block;
+    font-size: 3em;
+    margin-bottom: 20px;
+  }
+
+  .box {
+    .coupon {
+      background-color: rgba($color-background--coupon, $transparency--coupon);
+      border: $border-width--coupon $border-style--coupon $border-color--coupon;
+      @include border-radius(50px);
+      color: $color-text--coupon;
+      display: inline-block;
+      font-size: 2rem;
+      margin: 10px 0 30px;
+      padding: 20px;
+    }
+
+    form {
+      padding: 30px 0 20px;
+      margin-top: 20px;
+      border-top: 1px solid;
+
+      input[type="text"] {
+        font-weight: 300;
+        height: 50px;
+        line-height: 30px;
+        width: 100%
+      }
+
+      button[type="submit"] {
+        height: 50px;
+        text-transform: uppercase;
+      }
+
+      label {
+        font-size: 1em;
+
+        a:hover {
+          color: #3498db;
+        }
+      }
+    }
+
+    .logo-pwat {
+      height: 60px;
+      margin-bottom: 10px;
+    }
+  }
+
+  p:last-child {
+    margin-bottom: 0px;
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+  #coupon.hero {
+    background-attachment: $bg3-attachment;
+    background-position: $bg3-vpos $bg3-hpos;
+    background-size: $bg3-size;
+
+    .box {
+      .coupon {
+        font-size: 3rem;
+        margin: 20px 0 40px;
+        padding: 20px 40px;
+      }
+
+      form {
+        padding: 30px 20px 20px;
+
+        p {
+          margin-bottom: 10px;
+        }
+
+        input[type="text"] {
+          border-top-right-radius: 0;
+          border-bottom-right-radius: 0;
+          font-size: 1em;
+          width: 400px;
+        }
+
+        button[type="submit"] {
+          border-top-left-radius: 0;
+          border-bottom-left-radius: 0;
+          font-size: 1em;
+          margin-left: -5px;
+        }
+
+        label {
+          font-size: .7em;
+        }
+      }
+
+      .btn-primary {
+        margin-top: 20px;
+      }
+    }
+  }
+}

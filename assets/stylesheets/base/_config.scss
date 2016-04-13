@@ -1,0 +1,138 @@
+// ==========================================================================
+// Global Config
+// ==========================================================================
+
+
+// Font Stacks
+$font-family--primary   : 'Open Sans', Arial, sans-serif;
+$font-family--secondary : 'Times New Roman', serif;
+
+
+// Font Weights
+$font-weight--light     : 300;
+$font-weight--regular   : 400;
+$font-weight--bold      : 600;
+
+
+// Descriptive Base Colors
+$primary                : #000000;
+$secondary              : #f1eeeb;
+$accent                 : #d51f2c;
+$white                  : #ffffff;
+$black                  : #000000;
+$light-grey             : #a3a3a3;
+$super-light-grey       : lighten($light-grey, 20%);
+$grey                   : darken($light-grey, 20%);
+
+
+// Color general
+$color-background   : $secondary;
+$color-modal        : $white;
+$color-text         : $primary;
+$color-text-inverse : $white;
+$color-accent       : $accent;
+
+
+// Button Solid Color
+$bg-color--button-solid   : $black;
+$text-color--button-solid : $white;
+
+// Links
+$color-link       : $light-grey;
+$color-link-hover : $grey;
+
+
+// Text
+$base--font-size : 12px;
+$base--line      : 32px;
+
+
+// Logo
+/*
+ *  align left   : left
+ *  align center : none
+ */
+$logo-alignment--desktop : none;
+$logo-alignment--mobile  : none;
+
+
+// Hero Box
+$color-background--hero-box : $white;
+$color-text--hero-box       : $black;
+$transparency--hero-box     : .8;
+
+
+// Dashed & Solid lines
+$color-border : $super-light-grey;
+
+
+// Coupon
+$border-width--coupon       : 0;
+$border-style--coupon       : solid;
+$border-color--coupon       : $color-border;
+$color-background--coupon   : $color-accent;
+$color-text--coupon         : $white;
+$transparency--coupon       : 1;
+
+
+// Border radius
+$br--default    : .4em;
+$br--round      : 50%;
+
+
+// Screen Sizes
+$screen-width--iphone6      : 375px;
+$screen-width--iphone6plus  : 414px;
+
+
+// Transitions
+$trns-duration  : .3s;
+
+
+// Path to Assets
+$path--rel      : "assets/images/";
+
+
+// Hero Background-Image
+$bg1-attachment        : initial;
+$bg1-color             : transparent;
+$bg1-image             : "../images/background-1.jpg";
+$bg1-size              : cover;
+$bg1-repeat            : no-repeat;
+$bg1-vpos              : left;
+$bg1-hpos              : top;
+// mobile
+$bg1-attachment-mobile : initial;
+$bg1-size-mobile       : cover;
+$bg1-vpos-mobile       : -375px;
+$bg1-hpos-mobile       : top;
+
+
+// Join-Now Background-Image
+$bg2-attachment        : scroll;
+$bg2-color             : transparent;
+$bg2-image             : "../images/background-2.jpg";
+$bg2-size              : cover;
+$bg2-repeat            : no-repeat;
+$bg2-vpos              : center;
+$bg2-hpos              : top;
+// mobile
+$bg2-attachment-mobile : scroll;
+$bg2-size-mobile       : cover;
+$bg2-vpos-mobile       : -110px;
+$bg2-hpos-mobile       : center;
+
+
+// Access Page Background-Image
+$bg3-attachment  : scroll;
+$bg3-color       : $color-background;
+$bg3-image       : "../images/background-1.jpg";
+$bg3-size        : cover;
+$bg3-repeat      : no-repeat;
+$bg3-vpos        : top;
+$bg3-hpos        : left;
+// mobile
+$bg3-attachment-mobile : scroll;
+$bg3-size-mobile       : cover;
+$bg3-vpos-mobile       : center;
+$bg3-hpos-mobile       : center;

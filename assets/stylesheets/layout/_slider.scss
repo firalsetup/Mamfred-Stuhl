@@ -1,0 +1,31 @@
+// ==========================================================================
+// About Section
+// ==========================================================================
+
+
+// Mobile First!
+#slider {
+  background-color: $color-background;
+  padding-bottom: 70px;
+
+  img {
+    width: 100%;
+    margin-bottom: 10px;
+    height: auto;
+    object-fit: cover;
+  }
+
+  .carousel {
+    margin-bottom: 25px;
+  }
+
+  .carousel-indicators {
+    bottom: 0;
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  #slider img {
+    max-height: 540px;
+  }
+}

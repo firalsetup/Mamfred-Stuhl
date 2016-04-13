@@ -1,0 +1,24 @@
+// ==========================================================================
+// Contact-Form Access Page
+// ==========================================================================
+
+
+// Mobile First!
+#form.hero {
+  background-attachment: $bg3-attachment-mobile;
+  background-color: $bg3-color;
+  background-image: url($bg3-image);
+  background-position: $bg3-vpos-mobile $bg3-hpos-mobile;
+  background-repeat: $bg3-repeat;
+  background-size: $bg3-size-mobile;
+  color: $color-text-inverse;
+  text-align: center;
+}
+
+@media (min-width: $screen-sm-min) {
+  #coupon.hero {
+    background-attachment: $bg3-attachment;
+    background-position: $bg3-vpos $bg3-hpos;
+    background-size: $bg3-size;
+  }
+}

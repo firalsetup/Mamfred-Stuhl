@@ -1,0 +1,53 @@
+// ==========================================================================
+// Paragraphs
+// ==========================================================================
+
+
+// Mobile First!
+p {
+  font-weight: 200;
+  line-height: 1.5em;
+  margin-bottom: 20px;
+  text-align: center;
+
+  &.lead {
+    font-size: 19px;
+    line-height: 26px;
+  }
+
+  &.small {
+    font-size: 1.2rem;
+  }
+
+  a {
+    border-bottom: 2px solid rgba($color-text, 0.6);
+    color: inherit;
+    font-size: 1em;
+    font-weight: 100;
+    text-transform: none;
+
+    &:hover {
+      border-color: $color-accent;
+      color: $color-accent;
+    }
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+  p {
+    &.lead {
+      font-size: 1.4em;
+    }
+
+    &:last-child {
+      margin-bottom: 50px;
+    }
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  p.lead {
+    font-size: 1.5em;
+    line-height: normal;
+  }
+}

@@ -1,0 +1,55 @@
+// ==========================================================================
+// About Section
+// ==========================================================================
+
+
+// Mobile First!
+#main {
+  background-color: $color-background;
+
+  .title {
+    margin-bottom: 40px;
+  }
+
+  i {
+    margin-right: 5px;
+  }
+
+  .text-column {
+    margin-top: 40px;
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+  #main {
+    .text-column h3,
+    .text-column p {
+      text-align: left;
+    }
+
+    .title {
+      margin-bottom: 80px;
+    }
+
+    .text-column {
+      margin-top: 0;
+    }
+  }
+}
+
+@media (min-width: $screen-md-min) {
+  #main {
+    .text-column h3,
+    .text-column p {
+      text-align: left;
+    }
+
+    .title {
+      margin-bottom: 80px;
+    }
+
+    .text-column {
+      margin-top: 0;
+    }
+  }
+}

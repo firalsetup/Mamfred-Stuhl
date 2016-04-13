@@ -1,0 +1,65 @@
+// ==========================================================================
+// Normalize default elements
+// ==========================================================================
+
+
+// Mobile First!
+body {
+  background-color: $color-background;
+  color: $color-text;
+  font-family: $font-family--primary;
+  font-size: $base--font-size;
+  font-weight: $font-weight--light;
+  line-height: $base--line;
+}
+
+a {
+  color: $color-link;
+  cursor: pointer;
+  font-size: 12px;
+  text-transform: uppercase;
+  @include transition(all .2s);
+
+  &:focus, &:hover {
+    color: $color-link-hover;
+    text-decoration: none;
+  }
+}
+
+hr {
+  border-color: $color-border;
+}
+
+.small {
+  font-size: 0.7em;
+  line-height: 1.6em;
+  font-weight: 100;
+}
+
+.space-top {
+  margin-top: 20px;
+}
+
+@media (min-width: 491px) {
+  body {
+    font-size: 13px;
+  }
+}
+
+@media (min-width: $screen-sm-min) {
+  body {
+    font-size: 14px;
+  }
+}
+
+@media (min-width: $screen-md-min) {
+  body {
+    font-size: 16px;
+  }
+}
+
+@media (min-width: $screen-lg-min) {
+  body {
+    font-size: 18px;
+  }
+}
