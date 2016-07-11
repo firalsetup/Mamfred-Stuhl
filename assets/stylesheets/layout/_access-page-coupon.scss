@@ -2,6 +2,7 @@
 // Coupon Access Page
 // ==========================================================================
 
+$gelb: #CCA663;
 
 // Mobile First!
 #coupon.hero {
@@ -15,7 +16,7 @@
   text-align: center;
 
   i.lg {
-    color: darken($color-accent, 7%);
+    color: $gelb;
     display: block;
     font-size: 3em;
     margin-bottom: 20px;
@@ -23,7 +24,7 @@
 
   .box {
     .coupon {
-      background-color: rgba($color-background--coupon, $transparency--coupon);
+      background-color: $gelb;
       border: $border-width--coupon $border-style--coupon $border-color--coupon;
       @include border-radius(50px);
       color: $color-text--coupon;
