@@ -16,7 +16,7 @@ $gelb: #CCA663;
   text-align: center;
 
   i.lg {
-    color: $gelb;
+    color: $accent;
     display: block;
     font-size: 3em;
     margin-bottom: 20px;
@@ -24,7 +24,7 @@ $gelb: #CCA663;
 
   .box {
     .coupon {
-      background-color: $gelb;
+      background-color: $black;
       border: $border-width--coupon $border-style--coupon $border-color--coupon;
       @include border-radius(50px);
       color: $color-text--coupon;
